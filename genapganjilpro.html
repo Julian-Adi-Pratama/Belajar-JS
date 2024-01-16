@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gampang Bener Coy</title>
+        <style>
+            body { text-align: center; }
+            h2, h4 { margin: 0; }
+        </style>
+    </head>
+    <body>
+        <h2> Menentukan Bilangan Ganjil Genap</h2>
+        <br >
+        <!-- Input Bilangan -->
+        <span>Bilangan </span><input type="number" id="bilangan">
+        <button onclick="GanjilGenap()">Cek</button>
+        <p id="hasil"></p>
+        <script>
+            // Cek Ganjil Genap
+            function GanjilGenap() {
+                let bilangan = document.getElementById("bilangan").value
+                let hasil = document.getElementById("hasil")
+                if(bilangan % 2 == 0)
+                    hasil.innerText = "Hasil : Bilangan Genap"
+                else
+                    hasil.innerText = "Hasil : Bilangan Ganjil"
+            }
+        </script>
+    </body>
+</html>

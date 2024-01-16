@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahun  Kabisat</title>
+</head>
+<body>
+
+    <script>
+
+        tahun = 1600;
+        while(tahun<=2024){
+            if(tahun % 400 == 0 ){
+                document.write(' Tahun ' + tahun + ' Adalah Tahun ' + ' Kabisat'  + '<br>' )
+            }
+            else if( tahun % 100 == 0  ){
+                document.write(' Tahun' + tahun + ' Adalah Tahun ' + ' Biasa'  + '<br>')
+            }
+            else if(tahun % 4 == 0){
+                document.write('Tahun ' + tahun + ' Adalah Tahun ' + ' Kabisat'  + '<br>')
+            }
+            tahun++;
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,11 @@
+button {
+    padding:10px;
+    border-radius: 50px;
+    background-color: cyan;
+    color: rebeccapurple;
+}
+
+button:hover {
+    width: 200px;
+    background-color: red;
+}
